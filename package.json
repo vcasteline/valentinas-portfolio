@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy":"gh-page -d dist"
   },
   "devDependencies": {
     "vite": "^3.0.7"
   },
+  "homepage": "https//vcasteline.github.io/valentinas-portfolio",
   "dependencies": {
     "aos": "^2.3.4",
-    "bootstrap-icons": "^1.9.1"
+    "bootstrap-icons": "^1.9.1",
+    "gh-pages": "^4.0.0"
   }
 }
