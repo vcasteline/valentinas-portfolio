@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="stylesheet" href="style.css"/> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentina's Portfolio</title>
+  </head>
+  <body>
+    <div class="navBar d-block">
+      <div class="d-flex logo m-0">
+        <img style="width: 150px;" class="logo" src="public/images/logoInverted.png"/>
+
+      </div>
+      <nav class="shift">
+        <ul class="nav">
+          <li><a class="nav-item" href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+    <section class="proj-desc text-center">
+        <h1 class="text-center">Athlete Career Assessment App</h1>
+        <p class="text-center">
+            This project consisted of creating a web application for athletes, 
+            where they could take quizzes that would help them get career recommendations
+             as well as tools to better understand themselves and inspire them to potentially 
+             pursue a career outside of sports. It was inspired by the research done by Dr. Sanethia Thomas. 
+             The plan was to create this site using React, Node and MongoDB. The design of the website was inspired by two prototypes that were done for Dr. Thomas’s UX Design course, which were based on user research.
+        </p>
+        </section>
+    <section class="project-body text-center">
+        <h2 class="">Solution</h2>
+        <p>Starting out with the design, the inspiration and main functionality of the web application was taken from 2 prototypes provided. They both had slightly different features and we opted for a combination of both.
+           <br> This included a site that had lists of information cards about careers and quizzes where when clicked they would show that specific information.
+            Another feature that was implemented from one of these prototypes was the Career Profile where users could look at their career mind-map which is a map that includes the top 3 career clusters recommended to that person. A career cluster is a career area that includes several different pathways within that same area of interest, i.e. A Hospitality career cluster might include pathways like Recreation, Restaurants, and Tourism.</p>
+        <div class="d-flex justify-content-center">
+            <img style="width: 200px" class="" src="/images/Picture1.png">
+            <img style="width: 200px" class="" src="/images/Picture2.png">
+        </div>
+    </section>
+   
+    
+    <script type="module" src="/projects.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

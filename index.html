@@ -15,9 +15,9 @@
     <title>Valentina's Portfolio</title>
   </head>
   <body>
-    <div class="">
-      <div class="d-flex logo">
-        <img style="width: 150px;" class="logo" src="public/images/logo.png"/>
+    <div class="navBar">
+      <div class="d-flex logo m-0">
+        <img style="width: 150px;" class="logo" src="public/images/logoInverted.png"/>
 
       </div>
       <nav class="shift">
@@ -34,18 +34,22 @@
     <!-- <hr/> -->
     <section class="home wrapper">
       <div>
-        <h1 class="typing-demo" data-aos="fade-up "><b>Hi, I'm Valentina</b></h1>
-        <h1 class="typing-demo1 "><b>Developer and Designer</b></h1>
+        <h1 class="" data-aos="fade-up "><b>Hi, I'm Valentina</b></h1>
+        <h1 class=" " data-aos="fade-up "><b>Developer and Designer</b></h1>
         <h3 data-aos="fade-up">Welcome! I am a recent graduate from the University of Florida, I am passionate about design and web development.
           I love creating beautiful and clean interfaces that people enjoy using. </h3>
-          <div class="d-flex icon">
+          <!-- <div class="d-flex icon">
             <i class="bi bi-linkedin"></i>
-          </div>
-          
+
+          </div> -->
+          <!-- <img class=" mouse" src="/images/mouse.png"> -->
       </div>
     </section>
     <section class="about">
-      <h1 class="title" data-aos="fade-up">About</h1>
+      <div class="d-flex justify-content-center ">
+        <h1 data-aos="fade-up">About</h1>
+
+      </div>
       <div class="row mt-53">
         <div class="col-md-5 photoAbout">
 
@@ -55,25 +59,29 @@
             <p class=" thaiT show">I love thai food</p>
             <img class="w-50 music funFact" src="public/images/music.png"/>
             <p class=" musicT show">Music obsessed</p>
-          
             <img  class="w-50 travel funFact" src="public/images/travel.png"/>
-            <p class="travelT show">I enjoy travelling <br>and getting to know<br> different cultures</p>
+            <p class="travelT show">Travelling is one  <br>of my favorite things<br> </p>
 
 
          
         </div>
-        <div style="padding-left: 6.5rem;" data-aos="fade-up" class="col-md-7 d-flex p-5 ">
-          <p>My name is Valentina Casteline. I am an aspiring Junior Developer, front-end and user focused. I have always enjoyed designing things and giving UIs an easy feel and a clean and aesthetic look.<br><br>
-            I was born in Miami but raised in Ecuador, and I came to the states to get my degree. My major was Digital Arts and Sciences, a beautiful combination of Computer Science and Design, area where art and technology meet.
-            I like to be challenged and I always enjoy learning new technologies
+        <div style="padding-left: 6.5rem;" data-aos="fade-up" class="abt col-md-7 d-flex p-5 ">
+          <p> 
+            My name is Valentina Casteline and I am a recent graduate from the University of Florida with a Bachelor of Science in Digital Arts and Sciences. The skills I have acquired focus both on computer science and design, a major is where art and technology meet. 
+            <br><br>I consider myself front-end and user focused, although I am always excited to learn new technologies and expand my skillset and experience. I have always enjoyed everything design related and giving UIs an easy feel and a clean and aesthetic look.
+            I like to be challenged and I'm always looking for new opportunities to grow as software engineer.
           </p>
         </div>
         
       </div>
       
     </section>
-    <section class="projects">
-      <h1 class="title" data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+    <section class="projects ">
+      <div class="d-flex justify-content-center ">
+        <h1 class=" " data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+
+      </div>
+      <!-- <h2>Web Development</h2> -->
       <div data-aos="fade-up" class="cardM d-flex">
         <div class="col-md-6 m-5">
           <h1 class="card-title" >Athlete Career App</h1>
@@ -84,9 +92,12 @@
               <span class="badge badge-pill">HTML</span>
               <span class="badge badge-pill">MongoDB</span>
               <span class="badge badge-pill">CSS</span>
+
             </div>
             <div class="d-flex mt-2">
               <span class="badge badge-pill">Tailwind</span>
+              <span class="badge area badge-pill">Web Development</span>
+
             </div>
             
           </div>
@@ -94,7 +105,7 @@
            <p class="mb-5">This was a web application built for my Senior Project, it consisted of a site where student athetes 
              could have a resource to access information about opportunities outside of sports </p>
              <div class="button">
-              <a tabindex="0">View Project</a>
+              <a href="athlete.html" tabindex="0">View Project</a>
               <a tabindex="-1">View Project</a>
              </div>
          </div>
@@ -102,7 +113,7 @@
         </div>
         <div class="col-md-6 m-3 d-flex align-self-center justify-self-center">
           <div class="">
-            <img class="w-75 card-image " src="images/athlete.png">
+            <img class="w-75 card-image " src="images/athleteP.png">
 
           </div>
         </div>
@@ -110,6 +121,7 @@
       <div data-aos="fade-up" data-aos-duration="1000" class="cardM d-flex">
         <div class="col-md-6 m-5">
           <h1 class="card-title">Laundr E-Commerce Webiste</h1>
+         <div>
           <div class="d-flex"> 
             <span class="badge badge-pill">ReactJS</span>
             <span class="badge badge-pill">JavaScript</span>
@@ -118,6 +130,12 @@
             <span class="badge badge-pill">Stripe</span>
 
           </div>
+          <div class="d-flex mt-2">
+            <span class="badge area badge-pill">Front-end</span>
+
+          </div>
+         </div>
+          
          <div class="mt-5">
            <p class="mb-5">For this project, my team and I developed an e-commerce site for Laundr, a Gainesville-based company that offers on-demand laundry services and sells its own laundry bombs. The site was built mainly using React, it showcases their laundry products and is integrated with Stripe API </p>
            <div class="button">
@@ -128,7 +146,7 @@
         </div>
         <div class="col-md-6 m-3 d-flex align-self-center justify-self-center">
           <div class="">
-            <img class="w-75 card-image " src="images/laundr.png">
+            <img class="w-75 card-image " src="images/laundrP.png">
 
           </div>
         </div>
@@ -137,15 +155,22 @@
       <div data-aos="fade-up" data-aos-duration="1000" class="cardM d-flex">
         <div class="col-md-6 m-5">
           <h1  class="card-title">Ecualands NFT Collection Website</h1>
-          <div class="d-flex"> 
-            <span class="badge badge-pill">JavaScript</span>
-            <span class="badge badge-pill">HTML</span>
-            <span class="badge badge-pill">CSS</span>
-            <span class="badge badge-pill">Bootstrap</span>
-            <span class="badge badge-pill">GSAP</span>
-
-
+          <div>
+            <div class="d-flex"> 
+              <span class="badge badge-pill">JavaScript</span>
+              <span class="badge badge-pill">HTML</span>
+              <span class="badge badge-pill">CSS</span>
+              <span class="badge badge-pill">Bootstrap</span>
+              <span class="badge badge-pill">GSAP</span>
+  
+  
+            </div>
+            <div class="d-flex mt-2">
+              <span class="badge area badge-pill">Front-end</span>
+  
+            </div>
           </div>
+         
          <div class="mt-5">
            <p class="mb-5">In this project we designed and developed a website for an NFT collection, it includes a minting button that connects to a MetaMask account. </p>
            <div class="button">
@@ -156,12 +181,77 @@
         </div>
         <div class="col-md-6 m-3 d-flex align-self-center justify-self-center">
           <div class="">
-            <img class="w-75 card-image " src="images/ecualands.png">
+            <img class="w-75 card-image " src="images/ecualandsP.png">
 
           </div>
         </div>
         
       </div>
+      <!-- <h2>UX/UI</h2> -->
+      <div data-aos="fade-up" data-aos-duration="1000" class="cardM d-flex">
+        <div class="col-md-6 m-5">
+          <h1  class="card-title">LNL Beauty Case Study</h1>
+          <div class="d-flex"> 
+            <span class="badge badge-pill">Figma</span>
+            <span class="badge badge-pill">InVision</span>
+            <span class="badge badge-pill">Miro</span>
+            <span class="badge area badge-pill">UX Research</span>
+
+
+          </div>
+          <div class="d-flex mt-2">
+            <span class="badge area badge-pill">UX/UI Design</span>
+
+          </div>
+         <div class="mt-5">
+           <p class="mb-5">Design and prototype of a nail salon app to book appointments, look for inspiration, and buy nail goodies.</p>
+           <div class="button">
+            <a tabindex="0">View Project</a>
+            <a tabindex="-1">View Project</a>
+           </div>
+          </div>
+        </div>
+        <div class="col-md-6 m-3 d-flex align-self-center justify-self-center">
+          <div class="">
+            <img class="w-75 card-image " src="images/lnl.png">
+
+          </div>
+        </div>
+        
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="cardM d-flex">
+        <div class="col-md-6 m-5">
+          <h1  class="card-title">Roll20 Redesign</h1>
+          <div class="d-flex"> 
+            <span class="badge badge-pill">Figma</span>
+            <span class="badge badge-pill">ReactJS</span>
+            <span class="badge badge-pill">JavaScript</span>
+            <span class="badge area badge-pill">UX Research</span>
+
+
+          </div>
+          <div class="d-flex mt-2">
+            <span class="badge badge-pill">Bootstrap</span>
+            <span class="badge area badge-pill">UX/UI Design</span>
+
+          </div>
+         <div class="mt-5">
+           <p class="mb-5">The redesign of the Virtual Tabletop platform Roll20 into a more user-friendly and enjoyable experience </p>
+           <div class="button">
+            <a tabindex="0">View Project</a>
+            <a tabindex="-1">View Project</a>
+           </div>
+          </div>
+        </div>
+        <div class="col-md-6 m-3 d-flex align-self-center justify-self-center">
+          <div class="">
+            <img class="w-75 card-image " src="images/roll20P.png">
+
+          </div>
+        </div>
+        
+      </div>
+
     </section>
     <script type="module" src="/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
