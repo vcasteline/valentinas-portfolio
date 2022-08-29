@@ -451,7 +451,7 @@ body{
 }
 .proj-desc p{
   font-size: 1.3rem;
-  padding: 3rem;
+  padding: 2rem;
 
 }
 .proj-desc h1{
@@ -459,11 +459,27 @@ color: #ebe0d4;
 
 }
 .project-body{
-  background-color:#1B998B;
+  background-color:#ebe0d4;
+  /* background-color:#534D56; */
+  /* background-color:#f77b5b; */
 
-  color: #ebe0d4;
+
+  font-weight: 500;
+
+  color: rgb(60, 57, 57);
+  padding-left: 180px;
+  padding-right: 180px;
+
 }
 .project-body h2{
+  color: #C54F31;
   font-weight: 700;
   font-size: 3.2rem;
+}
+.project-body p{
+
+  font-size: 1.4rem;
+}
+ul{
+  list-style-type: none;
 }

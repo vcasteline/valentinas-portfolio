@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap');
+  
+      @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
+      /* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap'); */
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,24 +37,59 @@
             This project consisted of creating a web application for athletes, 
             where they could take quizzes that would help them get career recommendations
              as well as tools to better understand themselves and inspire them to potentially 
-             pursue a career outside of sports. It was inspired by the research done by Dr. Sanethia Thomas. 
-             The plan was to create this site using React, Node and MongoDB. The design of the website was inspired by two prototypes that were done for Dr. Thomas’s UX Design course, which were based on user research.
+             pursue a career outside of sports. 
         </p>
         </section>
     <section class="project-body text-center">
         <h2 class="">Solution</h2>
-        <p>Starting out with the design, the inspiration and main functionality of the web application was taken from 2 prototypes provided. They both had slightly different features and we opted for a combination of both.
-           <br> This included a site that had lists of information cards about careers and quizzes where when clicked they would show that specific information.
+        <p class="mt-5 mb-5 ">Starting out with the design, the inspiration and main functionality of the web application was taken from 2 prototypes provided. They both had slightly different features and we opted for a combination of both.
+           <br><br> This included a site that had lists of information cards about careers and quizzes where when clicked they would show that specific information.
             Another feature that was implemented from one of these prototypes was the Career Profile where users could look at their career mind-map which is a map that includes the top 3 career clusters recommended to that person. A career cluster is a career area that includes several different pathways within that same area of interest, i.e. A Hospitality career cluster might include pathways like Recreation, Restaurants, and Tourism.</p>
         <div class="d-flex justify-content-center">
             <img style="width: 200px" class="" src="/images/Picture1.png">
             <img style="width: 200px" class="" src="/images/Picture2.png">
         </div>
+        <p class="mt-5 mb-5">For the website user flow, we went with a straightforward approach, each main page is listed in the navbar, and the user can access them whenever, with the exception of the Profile page which can only be accessed when logged in. Then there is the individual quiz page and the individual career page which can be accessed when clicking on a specific quiz and career. The main features and functionality of the site include:</p>
+
+        <ul>
+         
+          <li>Registering</li>
+          <li>Logging in</li>
+          <li>Editing profile </li>
+          <li>Taking quizzes</li>
+          <li>Personalized career mind-map</li>
+          <li>Looking at information about careers</li>
+          <li>Reading athlete success stories</li>
+          <li>Admin login to change/add date</li>
+         
+        </ul>
+        <img class="w-75" src="/images/userFlow.png">
+        <h2 class="mt-5">Implementation</h2>
+        <p class="mb-5 mt-5">
+          For the implementation of the website, we needed to create routes available to use in the frontend to get 
+          the necessary information about users, careers, clusters, quizzes, and profile. These routes include getting
+           lists of information as well as specific information based on id tokens. They allow the user to change and interact 
+           with the backend from the website interface. For example, this is what a list of routes for the careers clusters looks like: 
+‍
+        </p>
+        <ul>
+         
+          <li>GET/api/clusters/get_clusters: Returns a list of clusters</li>
+          <li>GET/api/clusters/get_pathways: Returns a list of pathways</li>
+        </ul>
+        <p class="mb-5 mt-5">
+          The way the quiz recommendation works is by providing multiple choice answers where each answer is associated with a cluster, the answers are recorded and calculated to determine their top chosen career clusters, of which the top three will appear on their career mind-map. This logic was developed in the backend, and we calculated and displayed the results in the frontend.  React components display and get data from the backend by using the fetch API, which allows us to fetch resources asynchronously using the routes from the backend
+        </p>
+        <h2 class="mt-5 mb-5">Results</h2>
+        <img class="w-75 mb-3" src="/images/a1.png">
+        <img class="w-75 mb-3" src="/images/a2.png">
+        <img class="w-75 mb-3" src="/images/a3.png">
+        <img class="w-75 mb-3" src="/images/a4.png">
     </section>
    
     
     <script type="module" src="/projects.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
       AOS.init();
