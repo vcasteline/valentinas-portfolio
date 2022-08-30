@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="stylesheet" href="style.css"/> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+  
+      @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
+      /* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap'); */
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentina's Portfolio</title>
+  </head>
+  <body>
+    <div class="navBar d-block">
+      <div class="d-flex logo m-0">
+        <img style="width: 150px;" class="logo" src="images/logoInverted.png"/>
+
+      </div>
+      <nav class="shift">
+        <ul class="nav">
+          <li><a href="index.html">	&#8592 Back to home</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+    <section class="proj-desc text-center">
+        <h1 class="text-center">Laundr E-Commerce Website</h1>
+        <p class="text-center">
+            For this project, my team and I developed an e-commerce site for Laundr, a Gainesville-based company that offers on-demand laundry services and sells its own laundry bombs. The site was built mainly using React, it showcases their laundry products and is integrated with Stripe API
+        </p>
+        </section>
+    <section class="project-body text-center">
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="mt-5 mb-5">Project Description</h2>
+      <p data-aos="fade-up" data-aos-duration="1000" class="mb-5">Laundr is a company that picks up your dirty laundry, gets it cleaned, and delivers it
+        back to you. However, they wanted to release a line of Laundr Bombs, which take
+        the place of detergent in a load of laundry. To advertise and sell these Laundr Bombs,
+        an Ecommerce site was needed. This is the purpose of this app. <br><br>
+        This app was initially created using the MERN (MongoDB, Express, React, Node) stack,
+        but as the development got further, the team realized that storing tha cart contents using the local storage within
+        the browsers was a much simpler alternative than communicating back and forth with a database. The front-end was still implemented with
+        React, which was converted to static files which are serviced through the back-end. This
+        back-end is centered around server.js which runs using express and node.
+        This app has three types of pages, the landing page, the product pages, and the cart
+        page.</p>
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="mb-5" style="margin-top: 7rem;">Results</h2>
+        <p data-aos="fade-up" data-aos-duration="1000" class="mt-3 mb-5">My role in this project was of Front-end Developer, for which I was in charge of implementing the scroll snapping, scroll animations, tessellations, buttons, and most of the content for the website. </p>
+        <img data-aos="fade-up" data-aos-duration="1000" class="w-75 mb-3" src="images/l1.gif">
+        <p data-aos="fade-up" data-aos-duration="1000" class="mt-5 mb-5">
+          The landing page has scroll snapping for each of the offered products and the product pages have a scroll animation featuring a laundry bomb rolling out of the bag as the user scrolls down, which was done with GSAP. Tessellations were added in the background of product pages with additional CSS.
+
+        </p>
+        
+        <img data-aos="fade-up" data-aos-duration="1000" class="w-75 mb-3" src="images/l2.gif">
+        <img data-aos="fade-up" data-aos-duration="1000" class="w-75 mb-3" src="images/l3.gif">
+        <p data-aos="fade-up" data-aos-duration="1000" class="mt-5 mb-5">Click <a style="color: #1B998B; font-weight: 700;" href="https://drive.google.com/file/d/1IxfES-eVFsop0HsbrfrSUYyDd6ib_ieR/view">here</a> for a detailed document of the project's progress with sprints and backlogs.</p>
+    </section>
+   
+    
+    <script  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

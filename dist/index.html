@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valentina's Portfolio</title>
@@ -17,7 +19,7 @@
   <body>
     <div class="navBar">
       <div class="d-flex logo m-0">
-        <img style="width: 150px;" class="logo" src="public/images/logoInverted.png"/>
+        <img style="width: 150px;" class="logo" src="images/logoInverted.png"/>
 
       </div>
       <nav class="shift">
@@ -45,27 +47,27 @@
           <!-- <img class=" mouse" src="/images/mouse.png"> -->
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="d-flex justify-content-center ">
         <h1 data-aos="fade-up">About</h1>
 
       </div>
-      <div class="row mt-53">
+      <div class="row ">
         <div class="col-md-5 photoAbout">
 
           <!-- <img data-aos="fade-up" class="w-100" src="public/images/blob.png"/> -->
           
-            <img  class="w-50 thai funFact" src="public/images/thai.png"/>
+            <img  class="w-50 thai funFact" src="images/thai.png"/>
             <p class=" thaiT show">I love thai food</p>
-            <img class="w-50 music funFact" src="public/images/music.png"/>
+            <img class="w-50 music funFact" src="images/music.png"/>
             <p class=" musicT show">Music obsessed</p>
-            <img  class="w-50 travel funFact" src="public/images/travel.png"/>
-            <p class="travelT show">Travelling is one  <br>of my favorite things<br> </p>
+            <img  class="w-50 travel funFact" src="images/travel.png"/>
+            <p class="travelT show">Traveling is one  <br>of my favorite things<br> </p>
 
 
          
         </div>
-        <div style="padding-left: 6.5rem;" data-aos="fade-up" class="abt col-md-7 d-flex p-5 ">
+        <div style="padding-left: 6.5rem;" data-aos="fade-up" class="abt col-md-7 d-flex p-5">
           <p> 
             My name is Valentina Casteline and I am a recent graduate from the University of Florida with a Bachelor of Science in Digital Arts and Sciences. The skills I have acquired focus both on computer science and design, a major is where art and technology meet. 
             <br><br>I consider myself front-end and user focused, although I am always excited to learn new technologies and expand my skillset and experience. I have always enjoyed everything design related and giving UIs an easy feel and a clean and aesthetic look.
@@ -76,13 +78,48 @@
       </div>
       
     </section>
-    <section class="projects ">
+    <section id="projects" class="projects ">
       <div class="d-flex justify-content-center ">
-        <h1 class=" " data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">Projects</h1>
 
       </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="cardM d-flex">
+        <div class="col-md-6 m-5">
+          <h1  class="card-title">Ecualands NFT Collection Website</h1>
+          <div>
+            <div class="d-flex"> 
+              <span class="badge badge-pill">JavaScript</span>
+              <span class="badge badge-pill">HTML</span>
+              <span class="badge badge-pill">CSS</span>
+              <span class="badge badge-pill">Bootstrap</span>
+              <span class="badge badge-pill">GSAP</span>
+  
+  
+            </div>
+            <div class="d-flex mt-2">
+              <span class="badge area badge-pill">Front-end</span>
+  
+            </div>
+          </div>
+         
+         <div class="mt-5">
+           <p class="mb-5">In this project we designed and developed a website for an NFT collection, it includes a minting button that connects to a MetaMask account. </p>
+           <div class="button coming-soon">
+            <a  tabindex="0">Coming Soon</a>
+            <!-- <a tabindex="-1">View Project</a> -->
+           </div>
+          </div>
+        </div>
+        <div class="col-md-6 m-3 d-flex align-self-center justify-self-center">
+          <div class="">
+            <img class="w-75 card-image " src="images/ecualandsP.png">
+
+          </div>
+        </div>
+        
+      </div>
       <!-- <h2>Web Development</h2> -->
-      <div data-aos="fade-up" class="cardM d-flex">
+      <div data-aos="fade-up" data-aos-duration="1000" class="cardM d-flex">
         <div class="col-md-6 m-5">
           <h1 class="card-title" >Athlete Career App</h1>
           <div class=""> 
@@ -120,7 +157,7 @@
       </div>
       <div data-aos="fade-up" data-aos-duration="1000" class="cardM d-flex">
         <div class="col-md-6 m-5">
-          <h1 class="card-title">Laundr E-Commerce Webiste</h1>
+          <h1 class="card-title">Laundr E-Commerce Website</h1>
          <div>
           <div class="d-flex"> 
             <span class="badge badge-pill">ReactJS</span>
@@ -152,41 +189,7 @@
         </div>
         
       </div>
-      <div data-aos="fade-up" data-aos-duration="1000" class="cardM d-flex">
-        <div class="col-md-6 m-5">
-          <h1  class="card-title">Ecualands NFT Collection Website</h1>
-          <div>
-            <div class="d-flex"> 
-              <span class="badge badge-pill">JavaScript</span>
-              <span class="badge badge-pill">HTML</span>
-              <span class="badge badge-pill">CSS</span>
-              <span class="badge badge-pill">Bootstrap</span>
-              <span class="badge badge-pill">GSAP</span>
-  
-  
-            </div>
-            <div class="d-flex mt-2">
-              <span class="badge area badge-pill">Front-end</span>
-  
-            </div>
-          </div>
-         
-         <div class="mt-5">
-           <p class="mb-5">In this project we designed and developed a website for an NFT collection, it includes a minting button that connects to a MetaMask account. </p>
-           <div class="button">
-            <a  tabindex="0">View Project</a>
-            <a tabindex="-1">View Project</a>
-           </div>
-          </div>
-        </div>
-        <div class="col-md-6 m-3 d-flex align-self-center justify-self-center">
-          <div class="">
-            <img class="w-75 card-image " src="images/ecualandsP.png">
-
-          </div>
-        </div>
-        
-      </div>
+      
       <!-- <h2>UX/UI</h2> -->
       <div data-aos="fade-up" data-aos-duration="1000" class="cardM d-flex">
         <div class="col-md-6 m-5">
@@ -206,7 +209,7 @@
          <div class="mt-5">
            <p class="mb-5">Design and prototype of a nail salon app to book appointments, look for inspiration, and buy nail goodies.</p>
            <div class="button">
-            <a tabindex="0">View Project</a>
+            <a href="lnl.html" tabindex="0">View Project</a>
             <a tabindex="-1">View Project</a>
            </div>
           </div>
@@ -238,7 +241,7 @@
          <div class="mt-5">
            <p class="mb-5">The redesign of the Virtual Tabletop platform Roll20 into a more user-friendly and enjoyable experience </p>
            <div class="button">
-            <a tabindex="0">View Project</a>
+            <a href="roll20.html" tabindex="0">View Project</a>
             <a tabindex="-1">View Project</a>
            </div>
           </div>
@@ -253,9 +256,52 @@
       </div>
 
     </section>
-    <script type="module" src="/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <section id="resume" class="proj-desc text-center">
+       <h1 data-aos="fade-up" data-aos-duration="1000">Work experience? take a look at my resume</h1>
+      <!-- <div data-aos="fade-up" data-aos-duration="1000" id="adobe-dc-view" style="width: 800px;"></div> -->
+      <embed data-aos="fade-up" data-aos-duration="1000" src="files/my-resume.PDF#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="600px" />
+   
+    </section>
+    <section id="contact" class="contact text-center">
+      <h1>Want to say hello?</h1>
+      <h2>E-mail me at valentinacasteline@gmail.com :)</h2>
+      
+      <h2>
+       <a style="color: #ebe0d4;" href="https://www.linkedin.com/in/valentina-casteline-7a9126192/"><i class="bi bi-linkedin"></i></a> 
+      </h2>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> &#8593 top</button>
+  
+   
+   <script  src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
+   <script type="text/javascript">
+       document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+           var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
+           adobeDCView.previewFile({
+               content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+               metaData:{fileName: "Bodea Brochure.pdf"}
+           }, {embedMode: "IN_LINE"});
+       });
+       //Get the button
+      var mybutton = document.getElementById("myBtn");
 
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+   </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>

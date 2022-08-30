@@ -22,29 +22,17 @@ a:hover {
 }
 @font-face {
   font-family: "Fraunces";
-  src: url("public/fonts/frauncessoft.ttf") format("truetype");
+  src: url("fonts/frauncessoft.ttf") format("truetype");
 }
 @font-face {
   font-family: "Couper Jack";
-  src: url("public/fonts/CoupeurJack-Semibold.otf") format("truetype");
+  src: url("fonts/CoupeurJack-Semibold.otf") format("truetype");
 }
-@font-face {
-  font-family: "Muli";
-  src: url("public/fonts/Muli.ttf") format("truetype") font-weight-normal,
-      url("public/fonts/Muli-SemiBold.ttf") format("truetype") font-weight-bold,
-      url("public/fonts/Muli-ExtraLight") format("truetype") font-weight-extraLight ;
 
-}
 body {
   
-  background-color: #ada68d;
-  background-color: #F8F1FF;
-  background-color: rgb(249, 244, 238);
+ 
   background-color: #ebe0d4;
-
-
-  /* background-color: rgb(238, 232, 224); */
-
   font-family: 'Karla', sans-serif;
   margin: 0;
  
@@ -65,18 +53,10 @@ h1 {
 }
 .home{
   padding-bottom: 100px;
- padding-left: 130px;
-  background-color: #DECDF5;
-  background-color: rgb(249, 244, 238);
-  background-color: rgb(238, 232, 224);
-background-color: #ebe0d4;
-background-color: #C54F31;
-  
-
-color: #534D56;
-color: rgb(249, 244, 238);
-color: #ebe0d4;
-height: 100vh;
+  padding-left: 130px;
+  background-color: #C54F31;
+  color: #ebe0d4;
+  height: 100vh;
 
 }
 .home h1{
@@ -119,13 +99,9 @@ section{
   padding: 110px;
 }
 .about{
-  background-color: #F8F1FF;
-  background-color: rgb(238, 232, 224);
-  background-color: rgb(249, 244, 238);
-  background-color:   #ebe0d4;
-   
-
-  height: 800px;
+  background-color: #ebe0d4;
+  overflow: hidden;
+  height: 100vh;
 }
 .about h1{
   font-size: 5rem;
@@ -181,8 +157,8 @@ p{
 
 }
 .cardM h1{
-  /* font-family: 'Karla', sans-serif;
-  font-weight: 700; */
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
 }
 .card-image{
   transition: box-shadow .3s;
@@ -210,6 +186,7 @@ nav.shift ul li a {
 }
 nav.shift ul li a:hover {
   color: white;
+  color: #1B998B;
 }
 nav.shift ul li a:after {
   display: block;
@@ -224,6 +201,8 @@ nav.shift ul li a:after {
   content: '.';
   color: transparent;
   background: #1B998B;
+  background: #ebe0d4;
+  
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -285,10 +264,11 @@ margin-bottom: 20px;
   left: 260px;
 }
 .photoAbout{
-  background-image: url("public/images/blob.png");
+  background-image: url("images/blob.png");
   /* width: 50vw; */
   background-repeat:no-repeat ;
   background-size: contain;
+  margin-top: -90px;
 }
 .show{
   opacity: 0;
@@ -327,10 +307,6 @@ margin-bottom: 20px;
   overflow: hidden;
   border-right: 3px solid;
   border-color: transparent;
-
-  /* font-family: monospace;
-  font-size: 2em; */
-
 
 }
 .typing-demo1 {
@@ -395,7 +371,6 @@ margin-bottom: 20px;
 }
 
 .button :nth-child(1){
-  background-color: #c4ace4;
   background-color: #C54F31;
   color: rgb(255, 255, 255);
   z-index: 100;
@@ -403,6 +378,7 @@ margin-bottom: 20px;
   transition: transform 0.2s ease-in-out 0s;
   border-radius: 12px;
 }
+
 .button :nth-child(1):hover{
   transform: translate3d(2px, 2px, 2px);
   cursor: pointer;
@@ -476,10 +452,49 @@ color: #ebe0d4;
   font-weight: 700;
   font-size: 3.2rem;
 }
-.project-body p{
+.project-body p, li{
 
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 ul{
   list-style-type: none;
 }
+.orange{
+  color: #C54F31;
+  font-weight: bold;
+}
+.bold{
+  font-weight: 700;
+}
+.contact{
+  background-color: #1B998B;
+  color: #ebe0d4;
+}
+.contact h1{
+  color: #ebe0d4;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ebe0d4;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px;
+  border-style: solid;
+}
+
+#myBtn:hover {
+  background-color: #1B998B;
+  color: #ebe0d4;
+}
+/* .coming-soon{
+  background-color: #ebe0d4;
+  color: #C54F31;
+} */
